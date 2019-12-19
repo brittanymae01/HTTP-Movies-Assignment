@@ -1,7 +1,7 @@
 import React, { Component } from "react";
+import axios from 'axios';
 import { Link } from "react-router-dom";
 import MovieCard from "./MovieCard";
-import UpdateMovieForm from "./UpdateMovieForm";
 export default class MovieList extends Component {
 
   constructor(props) {
@@ -16,7 +16,9 @@ export default class MovieList extends Component {
 
   //   axios
   //     .get("http://localhost:5000/api/movies")
-  //     .then(res => this.setState({ movies: res.data }))
+  //     .then(res => console.log (res))
+
+  //       // this.setState({ movies: res.data }))
   //     .catch(err => console.log(err.response));
   // }
 

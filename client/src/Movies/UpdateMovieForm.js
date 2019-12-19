@@ -41,7 +41,6 @@ const UpdateMovieForm = props => {
     return (
         <div>
             <h2>Update Movie</h2>
-            {console.log(updated)}
             <form onSubmit={handleSubmit}>
                 <input
                     type='text'
@@ -61,12 +60,12 @@ const UpdateMovieForm = props => {
                     value={updated.metascore}
                     onChange={handleChanges}
                 />
-                <input
+                {/* <input
                     type='text'
                     name='stars'
-                // value={updated.stars}
-                // onChange={handleChanges}
-                />
+                value={updated.stars}
+                onChange={handleChanges}
+                /> */}
                 <button>Update</button>
             </form>
         </div>
